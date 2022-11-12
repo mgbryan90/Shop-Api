@@ -1,7 +1,10 @@
-# Dependencias
+# Construido con
 
 ```terminal
-dotenv, express, MySQL, Babel, nodemon
+Node.js - JavaScript environment
+Express - The web framework used
+Imsomnia
+MySQL - Relational database
 ```
 
 ## Pasos a seguir para la creacion de la API
@@ -26,7 +29,7 @@ npm install @babel/cli @babel/core @babel/node @babel/preset-env morgan (para ve
  "test": "echo \"Error: no test specified\" && exit 1" 
  -- Para usar babel y convertir mi codigo a JS estandar y luego iniciar mi servidor con express
  "babel-node": "babel-node --presets=@babel/preset-env",
- "dev": "nodemon --exec npm run babel-node src/index.js"
+ "start": "nodemon --exec npm run babel-node src/index.js"
 ```
 
 ## Para acceder a la BD crear un archivo .env y poner sus datos por ejemplo
@@ -36,4 +39,10 @@ npm install @babel/cli @babel/core @babel/node @babel/preset-env morgan (para ve
 ● Usuario= test1
 ● Contraseña= test123456
 ● Nombre db= test_db
+```
+
+## Correr en consola el siguiente comando para levantar el servidor
+
+```terminal
+   npm run start
 ```

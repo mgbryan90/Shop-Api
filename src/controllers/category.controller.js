@@ -6,8 +6,7 @@ const getCategory = async (request, response) => {
     const result = await connection.query("SELECT * FROM category");
     response.json(result);
   } catch (error) {
-    response.status(500);
-    response.send(error.message);
+    response.status(500).send(error.message);
   }
 };
 
