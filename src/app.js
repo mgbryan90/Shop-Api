@@ -5,7 +5,6 @@ import cors from "cors";
 // Routes
 import productsRoutes from "./routes/products.router";
 import categoryRoutes from "./routes/category.router";
-import filterRoutes from "./routes/filter.router";
 
 // Creamos una constante que sea igual a la ejecución de express
 const app = express();
@@ -24,6 +23,6 @@ app.use(express.json());
 // Use Routes -- La ruta que usa para la consulta de productos
 app.use("/api/product", productsRoutes);
 app.use("/api/category", categoryRoutes);
-app.use("/api/filter", filterRoutes);
+// app.use("/api/filter", filterRoutes);
 
 export default app;

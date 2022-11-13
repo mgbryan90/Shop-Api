@@ -6,5 +6,6 @@ const router = Router();
 
 // Se puede abreviar request con req y response por res
 router.get("/", categoryControllers.getCategory);
+router.get("/:idCategory/products", categoryControllers.getProductsByCategory);
 
 export default router;

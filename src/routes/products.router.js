@@ -5,6 +5,8 @@ import { methods as productControllers } from "../controllers/products.controlle
 const router = Router();
 
 // Se puede abreviar request con req y response por res
-router.get("/", productControllers.getProducts);
+router
+  .get("/", productControllers.getProducts)
+  .post("/", productControllers.getFilter);
 
 export default router;
