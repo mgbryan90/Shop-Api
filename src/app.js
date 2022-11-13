@@ -3,8 +3,8 @@ import morgan from "morgan";
 import cors from "cors";
 
 // Routes
-import productsRoutes from "./routes/products.router";
-import categoryRoutes from "./routes/category.router";
+import productsRoutes from "./routes/products.router.js";
+import categoryRoutes from "./routes/category.router.js";
 
 // Creamos una constante que sea igual a la ejecución de express
 const app = express();

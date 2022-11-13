@@ -1,4 +1,4 @@
-import { getConnection } from "./../database/database";
+import { getConnection } from "./../database/database.js";
 
 // Para listar Productos
 // Status 500 para ver si existe error del servidor en la consulta

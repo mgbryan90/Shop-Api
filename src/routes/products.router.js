@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { methods as productControllers } from "../controllers/products.controller";
+import { methods as productControllers } from "../controllers/products.controller.js";
 
 // Creamos un Router que nos permite manejar las rutas del proyecto
 const router = Router();

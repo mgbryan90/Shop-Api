@@ -2,7 +2,7 @@
 
 // Para poder conectarme a la BD
 import mysql from "promise-mysql";
-import config from "./../config";
+import config from "./../config.js";
 
 // Usamos el createPool
 const connection = mysql.createPool({
@@ -17,7 +17,4 @@ const getConnection = () => {
   return connection;
 };
 
-// Exportando getConnection
-module.exports = {
-  getConnection,
-};
+export { getConnection };

@@ -1,4 +1,4 @@
-import { getConnection } from "./../database/database";
+import { getConnection } from "./../database/database.js";
 
 const getCategory = async (request, response) => {
   try {
@@ -13,7 +13,6 @@ const getCategory = async (request, response) => {
 // Peticion para conseguir los productos por Categoria
 const getProductsByCategory = async (request, response) => {
   const { idCategory } = request.params;
-  console.log(idCategory);
   try {
     const connection = await getConnection();
     const result = await connection.query(
