@@ -1,5 +1,4 @@
 import express from "express";
-import morgan from "morgan";
 import cors from "cors";
 
 // Routes
@@ -13,8 +12,6 @@ const app = express();
 app.set("port", process.env.PORT || 3000);
 
 // Middlewares (Funciones intermedias entre una peticion y una respuesta)
-// Usamos el modulo morgan en modo de desarrollo - Para tener un detalle de las peticiones que estoy haciendo
-app.use(morgan("dev"));
 app.use(cors());
 
 // Para que pueda entender y procesar json
