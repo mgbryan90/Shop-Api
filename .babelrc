@@ -1,6 +1,0 @@
-// Nos ayuda para poder convertir mi codigo de JS moderno a JS estandar lo mas entendible posible
-
-// Para que babel detecte para poder convertir mi codigo de JS
-{
-  "presets": ["@babel/preset-env"]
-} 

@@ -10,7 +10,7 @@ import categoryRoutes from "./routes/category.router.js";
 const app = express();
 
 // Settings
-app.set("port", process.env.PORT);
+app.set("port", process.env.PORT || 3000);
 
 // Middlewares (Funciones intermedias entre una peticion y una respuesta)
 // Usamos el modulo morgan en modo de desarrollo - Para tener un detalle de las peticiones que estoy haciendo

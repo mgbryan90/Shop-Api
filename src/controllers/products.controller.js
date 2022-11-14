@@ -14,6 +14,7 @@ const getProducts = async (request, response) => {
 
 const getFilter = async (request, response) => {
   const { mode } = request.body;
+  console.log(request.body);
   try {
     const connection = await getConnection();
     const result = await connection.query(
