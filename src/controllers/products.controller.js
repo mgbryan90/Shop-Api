@@ -12,6 +12,7 @@ const getProducts = async (request, response) => {
   }
 };
 
+// Para poder filtrar con los query (datos que vienen de los inputs)
 const getFilter = async (request, response) => {
   const { mode } = request.body;
   console.log(request.body);
